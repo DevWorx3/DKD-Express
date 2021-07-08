@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@model DKD_Express.Models.EmailModel
+@using DKD_Express.Resources;
+
+<!DOCTYPE html>
 <html lang="en">
 
 <body>
-
-    
+ 
     <main id="main">
-
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
@@ -13,14 +14,9 @@
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
                         <img src="content/img/Truck3.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">  
-                        <h3>About Us</h3>
-                        <p>
-                            Established in 2003 by Danny and Tweety Gounder, DKD Express was developed as family business. 
-                            With over 30 years of experience in the transport industry, Danny began his solo business with an 8ton 14/17. 
-                            Eighteen years later, Danny and Tweety share their company with newly add directors consisting of their three children Deme, Kim and Deo. 
-                            The ever expanding company now consists of an array of fleet vehicles including a super link and branches in Durban and Johannesburg.
-                        </p>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+                        <h3>@labels.AboutUs</h3>
+                        <p>@labels.AboutUsDesc</p>
                     </div>
                 </div>
 
@@ -89,13 +85,13 @@
                             <h4><a href="">Services</a></h4>
                             <div class="">
                                 <ul id="Services">
-                                    <li>Bulk and Long Haul Freight</li>
-                                    <li>Hazchem and General Transportation (Palletized and Flowbin) </li>
-                                    <li>Liquid Pumping (Decant to Tank)</li>
-                                    <li>Harbour Deliveries (Island View/Richards Bay/Transnet Port</li>
-                                    <li>Food Transportation (non-refrigeration)</li>
-                                    <li>Advertising Space (availability)</li>
-                                    <li>Parts and Spares Suppliers</li>
+                                    <li style="text-align: left;">Bulk and Long Haul Freight</li>
+                                    <li style="text-align: left;">Hazchem and General Transportation (Palletized and Flowbin) </li>
+                                    <li style="text-align: left;">Liquid Pumping (Decant to Tank)</li>
+                                    <li style="text-align: left;">Harbour Deliveries (Island View/Richards Bay/Transnet Port</li>
+                                    <li style="text-align: left;">Food Transportation (non-refrigeration)</li>
+                                    <li style="text-align: left;">Advertising Space (availability)</li>
+                                    <li style="text-align: left;">Parts and Spares Suppliers</li>
                                 </ul>
                             </div>
                         </div>
@@ -107,13 +103,13 @@
                             <h4><a href="">Driver and Vehicle Certification</a></h4>
                             <div class="">
                                 <ul id="Certification">
-                                    <li>Hazchem</li>
-                                    <li>Fire Permit </li>
-                                    <li>Port Permits </li>
-                                    <li>Pest Control </li>
-                                    <li>Covid19 Preparedness Program Trained)</li>
-                                    <li>EnviroSure and Spilltech Coverage</li>
-                                    <li>Sasria and GIT </li>
+                                    <li style="text-align: left;">Hazchem</li>
+                                    <li style="text-align: left;">Fire Permit </li>
+                                    <li style="text-align: left;">Port Permits </li>
+                                    <li style="text-align: left;">Pest Control </li>
+                                    <li style="text-align: left;">Covid19 Preparedness Program Trained)</li>
+                                    <li style="text-align: left;">EnviroSure and Spilltech Coverage</li>
+                                    <li style="text-align: left;">Sasria and GIT </li>
                                 </ul>
                             </div>
                         </div>
@@ -124,13 +120,13 @@
                             <h4><a href="">Delivery Areas</a></h4>
                             <div class="">
                                 <ul id="DeliveryAreas">
-                                    <li>Pinetown</li>
-                                    <li>Chatsworth, Mobeni, Jacobs to Amanzimtoti </li>
-                                    <li>Scottburgh to Margate</li>
-                                    <li>Springfield to Umhlanga</li>
-                                    <li>Balito</li>
-                                    <li>Stanger, Empangeni, Richards bay</li>
-                                    <li>Newcastle, Escort, Ladysmith</li>
+                                    <li style="text-align: left;">Pinetown</li>
+                                    <li style="text-align: left;">Chatsworth, Mobeni, Jacobs to Amanzimtoti </li>
+                                    <li style="text-align: left;">Scottburgh to Margate</li>
+                                    <li style="text-align: left;">Springfield to Umhlanga</li>
+                                    <li style="text-align: left;">Balito</li>
+                                    <li style="text-align: left;">Stanger, Empangeni, Richards bay</li>
+                                    <li style="text-align: left;">Newcastle, Escort, Ladysmith</li>
                                 </ul>
                             </div>
                         </div>
@@ -433,99 +429,99 @@
         </section><!-- End Testimonials Section -->
         <!-- ======= Team Section ======= -->
         @*<section id="team" class="team">
-            <div class="container" data-aos="fade-up">
+                <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Team</h2>
-                    <p>Check our Team</p>
+                    <div class="section-title">
+                        <h2>Team</h2>
+                        <p>Check our Team</p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="100">
+                                <div class="member-img">
+                                    <img src="content/img/team/team-1.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Walter White</h4>
+                                    <span>Chief Executive Officer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="200">
+                                <div class="member-img">
+                                    <img src="content/img/team/team-2.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="300">
+                                <div class="member-img">
+                                    <img src="content/img/team/team-3.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>William Anderson</h4>
+                                    <span>CTO</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="content/img/team/team-4.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="100">
-                            <div class="member-img">
-                                <img src="content/img/team/team-1.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Executive Officer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="200">
-                            <div class="member-img">
-                                <img src="content/img/team/team-2.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="300">
-                            <div class="member-img">
-                                <img src="content/img/team/team-3.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>CTO</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="member" data-aos="fade-up" data-aos-delay="400">
-                            <div class="member-img">
-                                <img src="content/img/team/team-4.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>*@
+            </section>*@
         <!-- End Team Section -->
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Contact Us</p>
+                    <h2>@labels.Contact</h2>
+                    <p>@labels.ContactUs</p>
                 </div>
 
                 <div>
@@ -538,20 +534,20 @@
                         <div class="info">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>58 Globe Terrace, Havenside, Chatsworth 4092</p>
+                                <h4>@labels.Location:</h4>
+                                <p>@labels.LocationAddress</p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>dkd.express3@gmail.com</p>
+                                <h4>@labels.Email:</h4>
+                                <p>@labels.EmailAddress</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>073 738 5597</p>
+                                <h4>@labels.Call:</h4>
+                                <p>@labels.Number</p>
                             </div>
 
                         </div>
@@ -560,28 +556,24 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-sm", @placeholder = labels.YourName })
                             </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                @Html.TextBoxFor(c => c.From, new { @class = "form-control input-sm", @placeholder = labels.YourEmail })
                             </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
+                        </div>
+                        <div class="form-group mt-3">
+                            @Html.TextBoxFor(c => c.Subject, new { @class = "form-control input-sm", @placeholder = labels.Subject })
+                        </div>
+                        <div class="form-group mt-3">
+                            @Html.TextAreaFor(c => c.Body, new { @class = "form-control input-sm", @placeholder = labels.Message })
+                        </div>
+                        <div class="my-3" id="EmailMessage">
+                           
+                        </div>
+                        <div class="text-center"><button class="send-email-btn" style="text-align: right!important;" id="SendEmail" type="button">@labels.SendMessage</button></div>
 
                     </div>
 
@@ -683,3 +675,48 @@
 </body>
 
 </html>
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#SendEmail").on('click', function () {
+
+          var name = $("#Name").val();
+          var subject = $("#Subject").val();
+          var from =  $("#From").val();
+            var body = $("#Body").val();
+
+            var url = getHome() + "/Home/SendEmail?";
+
+                $.ajax({
+                    url: url,
+                    type: 'Post',
+                    data: {
+                        email: from,
+                        subject: subject,
+                        message: body,
+                        name: name
+                    },
+                    success: function (result) {
+
+                        if (result.valid == true)
+                        {
+
+                            $("#Name").val("");
+                            $("#Subject").val("");
+                            $("#From").val("");
+                            $("#Body").val("");
+                            document.getElementById("EmailMessage").innerHTML = "<div class='alert alert-success'>The email was sent successfully.</div>";
+                        }
+                        else
+                        {
+                            document.getElementById("EmailMessage").innerHTML = "";
+                        }
+                    },
+                    error: function () {
+                    }
+                });
+        });
+    });
+</script>
